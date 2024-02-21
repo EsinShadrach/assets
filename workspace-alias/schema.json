@@ -35,7 +35,7 @@
           "description": "Aliases for commands, providing alternative names."
         }
       },
-      "required": ["name", "type", "fileMatch", "commands", "command_alias"],
+      "required": ["name", "type", "file_match", "commands", "command_alias"],
       "additionalProperties": false
     }
   }
