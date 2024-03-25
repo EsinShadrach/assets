@@ -23,6 +23,9 @@
               },
               "description": "File patterns associated with the language."
             },
+            "dir_match": {
+              "type": "array"
+            },
             "commands": {
               "type": "array",
               "items": {
@@ -42,6 +45,7 @@
             "name",
             "type",
             "file_match",
+            "dir_match",
             "commands",
             "command_alias"
           ],
