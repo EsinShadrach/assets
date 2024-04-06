@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grid product_grid">
+      <!-- Product Card START -->
+      <div
+        class="w-full p-2 overflow-x-hidden border product_card min-h-96 rounded-md"
+      >
+        <div class="relative overflow-hidden">
+          <div
+            class="absolute z-10 px-2 text-sm text-white bg-customized rounded-md p-0.5 top-1 left-1 w-fit"
+          >
+            <small>Customized</small>
+          </div>
+          <div
+            class="relative"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <img
+              src="https://adikasstakes.pythonanywhere.com/media/products/featured/images/4028-654.jpg"
+              alt="img-1"
+              width="300px"
+              height="300px"
+              class="max-w-xs mx-auto hover:scale-105 transition-transform duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+
+        <div class="py-3 space-y-3">
+          <div class="mb-3 text-lg font-semibold">
+            Brighton and Hove Albion Away Jersey 2023/24
+          </div>
+          <div class="text-sm font-bold text-black/60">
+            NGN11000 <s>NGN14000</s>
+          </div>
+          <div class="mt-3 text-xs">HOME (2023/2024)</div>
+        </div>
+      </div>
+      <!-- Product Card END -->
+    </div>
+    <script>
+      const show8 = true;
+      const prodcard = document.querySelector(".product_card");
+      const productGrid = document.querySelector(".product_grid");
+      if (show8) {
+        for (let i = 0; i < 8; i++) {
+          const clone = prodcard.cloneNode(true);
+          productGrid.appendChild(clone);
+        }
+      }
+    </script>
+  </body>
+</html>
